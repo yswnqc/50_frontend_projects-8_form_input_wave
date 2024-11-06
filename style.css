@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: steelblue;
+  color: white;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+}
+
+.prev-proj {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: lightgray;
+  cursor: pointer;
+  z-index: 1;
+}
+.next-proj {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: lightgray;
+  cursor: pointer;
+  z-index: 1;
+}
+.prev-proj:hover,
+.next-proj:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.register:visited,
+.register:hover {
+  color: steelblue;
+}
+
+.container {
+  position: relative;
+  margin: 40px 0;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width: 100%;
+  background-color: lightblue;
+  padding: 15px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:hover {
+  filter: brightness(85%);
+}
+
+label {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: bold;
+  top: 15px;
+}
+
+span {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  font-size: 18px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+input:focus + label span {
+  color: lightblue;
+  top: -30px;
+}
+
+label.active span {
+  transition: none;
+}
