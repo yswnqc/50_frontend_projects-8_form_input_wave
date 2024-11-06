@@ -105,6 +105,7 @@ input:focus {
 button {
   width: 100%;
   background-color: lightblue;
+  color: black;
   padding: 15px;
   cursor: pointer;
   font-family: inherit;
